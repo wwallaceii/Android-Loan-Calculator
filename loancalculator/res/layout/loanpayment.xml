@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    >
+    <ScrollView
+    	android:fillViewport="false"
+    	android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+    	>
+	    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:padding="15px" >
+	    <TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="Amount Financed"
+	    />
+	    <EditText
+	    android:id="@+id/amountFinanced"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="numberDecimal"
+	    android:hint="Amount financed"
+	    />
+	    <TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="Loan Length (years)"
+	    />
+	    <EditText
+	    android:id="@+id/loanLength"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="numberDecimal"
+	    android:hint="Loan length in years"
+	    />
+	    <TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="Interest Rate"
+	    />
+	    <EditText
+	    android:id="@+id/interestRate"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="numberDecimal"
+	    android:hint="Loan interest rate"
+	    />
+	    <Button
+	    android:id="@+id/calcPaymentButton"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Calculate Payment"
+	    android:onClick="calcButtonClick"
+	    />
+  		<TextView	    
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:text="Payment:"
+	    />
+    	<TextView
+	    android:id="@+id/paymentText"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_weight="2"
+	    android:textSize="18pt"
+	    />
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>
