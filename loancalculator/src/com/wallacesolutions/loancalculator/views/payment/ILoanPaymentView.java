@@ -7,4 +7,5 @@ public interface ILoanPaymentView {
 	public String getLength();
 	public String getRate();
 	public void setToastMessage(String text);
+	public void clearSoftKeyboard();
 }

@@ -6,7 +6,7 @@
       >
     <uses-sdk android:minSdkVersion="4" />
     
-    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true"  >
+    <application android:icon="@drawable/icon" android:label="@string/app_name"  android:debuggable="true"  >
         <activity android:name="com.wallacesolutions.loancalculator.views.payment.LoanPaymentView"
                   android:label="@string/app_name"
                   android:screenOrientation="portrait">

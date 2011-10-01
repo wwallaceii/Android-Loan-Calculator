@@ -16,7 +16,7 @@ public class LoanPaymentPresenter {
 
 	public void calculatePayment() {
 		//Clear currently displayed payment
-		clearPayment();
+		clearPaymentAndHideKeyboard();
 		
 		if(validateInput())
 		{			
@@ -35,8 +35,9 @@ public class LoanPaymentPresenter {
 		}
 	}
 
-	private void clearPayment() {
-		_view.setDisplayedPayment("");		
+	private void clearPaymentAndHideKeyboard() {
+		_view.setDisplayedPayment("");
+		_view.clearSoftKeyboard();
 	}
 
 	private boolean validateInput()
